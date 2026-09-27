@@ -1,3 +1,11 @@
+# 9/26/2026
+
+When I write 
+```c++
+<< order1.side
+```
+C++ errors because `Side` is an `enum class` and `std::cout` doesn't automatically know how to turn `Side::Buy` into "BUY"
+
 # 9/16/2026
 
 Manual method:
