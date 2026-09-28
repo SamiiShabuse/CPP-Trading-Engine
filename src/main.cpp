@@ -25,5 +25,27 @@ int main() {
         .side=Side::Sell,
     };
 
-    std::cout << "Order " << order1.order_id << ": " << order1.side << order1.price / 100 << "x " << order1.quantity << std::endl;
+    std::cout << "Order " 
+              << order1.order_id
+              << ": " << (order1.side == Side::Buy ? "BUY " : "SELL ") 
+              << order1.price / 100.0 
+              << " x " 
+              << order1.quantity 
+              << std::endl;
+
+    std::cout << "Order " 
+              << order2.order_id
+              << ": " << (order2.side == Side::Buy ? "BUY " : "SELL ") 
+              << order2.price / 100.00 
+              << " x " 
+              << order2.quantity 
+              << std::endl;
+
+    std::cout << "Order " 
+              << order3.order_id
+              << ": " << (order3.side == Side::Buy ? "BUY " : "SELL ") 
+              << order3.price / 100.00 
+              << " x " 
+              << order3.quantity 
+              << std::endl;
 }

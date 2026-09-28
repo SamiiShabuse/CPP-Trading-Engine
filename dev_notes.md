@@ -1,3 +1,9 @@
+# 9/27/2026
+- In C++ it does integer division if you do `10025 / 100` so you get an integer result. => Basically throw's away the decimal part. So instead use `100.0`
+
+int / int -> int
+int / double -> double
+
 # 9/26/2026
 
 When I write 
