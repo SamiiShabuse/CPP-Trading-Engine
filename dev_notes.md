@@ -4,6 +4,18 @@
 int / int -> int
 int / double -> double
 
+for the function we made:
+```c++
+void printOrder(const Order& order) // We wrote this
+void printOrder(const Order order) // DID NOT WRITE THIS
+```
+Because `Order order` would normally copy the entire `Order` struct into the function. But instead `const Order& order` means roughly: give me the reference of the exisitng Order. Don't copy it, and don't allow this function to modify it. 
+
+So:
+
+Order order -> COPY the object
+const Order& order -> Refers to the existing object.
+
 # 9/26/2026
 
 When I write 
