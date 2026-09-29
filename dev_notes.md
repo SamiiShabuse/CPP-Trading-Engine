@@ -1,3 +1,25 @@
+# 9/29/2026
+- Orders are grouped by price, and orders at the same price must stay in arrival order.
+
+So we want
+```text
+BIDS
+100.25 -> [Order #1, Order #4]
+100.20 -> [Order #2]
+
+ASKS
+100.30 -> [Order #3]
+100.35 -> [Order #5, Order #6]
+``` 
+
+- Use std::map, std:deque
+    - map will be prices -> orders at that price
+    - prices -> orders at that price
+    - deque will represent the orders at that price in arrival order.
+
+- For asks, lower prices are better.
+_ For bids, higher prices are better.
+
 # 9/27/2026
 - In C++ it does integer division if you do `10025 / 100` so you get an integer result. => Basically throw's away the decimal part. So instead use `100.0`
 
